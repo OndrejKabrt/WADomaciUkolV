@@ -1,19 +1,30 @@
 let letters = "0123456789ABCDEF"; 
   
 
-let color = '#'; 
+
   
 function generujB(){
+    let color = '#'; 
     for (let i = 0; i < 6; i++) {
         color += letters[(Math.floor(Math.random() * 16))]; 
         
     }
-    var button = document.createElement("colour1");
-    button.style.background=generujB();
-    document.getElementById("colour2").style.background=generujB();
+    return color;
 }
-generujB();
-console.log(color);
+
+    var button1 = document.getElementById("colour1");
+    button1.style.background = generujB();
+    
+    var button2 = document.getElementById("colour2");
+    button2.style.background = generujB();
+    
+    var button3 = document.getElementById("colour3");
+    button3.style.background = generujB();
+
+
+var h1 = document.getElementById("hledane");
+
+
 
 
 
